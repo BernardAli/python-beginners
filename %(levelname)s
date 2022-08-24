@@ -1,0 +1,8 @@
+root - INFO - Starting
+root - INFO - Task: main performing 4 times
+root - INFO - Task main: 0
+root - INFO - Task main: 1
+root - INFO - Task main: 2
+root - INFO - Task main: 3
+root - INFO - Task: main: complete
+root - INFO - Finished all threads

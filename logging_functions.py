@@ -51,4 +51,4 @@ test()
 # Log to file 
 handler = logging.FileHandler('file.log')
 
-formatter = logging.Formatter()
+formatter = logging.Formatter(f{})
