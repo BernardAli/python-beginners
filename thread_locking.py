@@ -19,6 +19,27 @@ def test(count):
     for x in range(count):
         logging.info(f"Count: {threadname} += {count}")
 
+        # The global interpreter lock (GIL) in action
+        # counter += 1
+
+        # Locking
+        # lock = threading.Lock()
+        # lock.acquire()
+        # # lock.acquire() # deadlock - waiting for resources
+
+        # try:
+        #     counter += 1
+        # finally:
+        #     lock.release()
+
+        # Locking simplified
+        lock = threading.Lock()
+        with lock:
+            logging.info(f"Locked: {threadname}")
+            counter += 1
+            time.sleep(2)
+
+    print(f"Counter {counter}")
     logging.info(f"Completed: {threadname}")
 
 
